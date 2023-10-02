@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Prisco - About Me</title>
+    <link rel="stylesheet" href="me.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="back-arrow" src="back.svg"></a>
+        <h1>Hi!</h1>
+    </header>
+    
+    <section>
+        <h3>My Background</h3>
+        <!-- <p> -->
+            I was born and raised in Northern New Jersey, where I lived until I went to college! I am very passionate about things that only a New Jerseyan could care about: it's pork roll, not Taylor Ham; central Jersey is not real.
+            I grew up loving musical theater and baseball, going into New York City every so often to see both Broadway shows and Yankees games. In the 5th grade, I took a summer class where I learned HTML, and I've been writing code since.
+        <!-- </p> -->
+    </section>
+    <section>
+        <h3>My Education</h3>
+        <p>
+            <span title="This information is auto-updating and should be up to date based on today's date. I am graduating in May 2025!" id="year"></span> At WashU, I have taken relevant courses such as: 
+            <ul>
+                <li>CSE 332: Object Oriented Development Lab</li>
+                <li>CSE 330: Creative Programming and Rapid Prototype Devlopment</li>
+                <li>CSE 231: Parallel and Concurrent Programming</li>
+                <li>CSE 256: Introduction to Human Centered Design</li>
+            </ul>
+            <p>Where I am currently enrolled in:</p>
+            <ul>
+                <li>CSE 425: Programming Systems and Languages</li>
+                <li>CSE 365: Elements of Computing Systems</li>
+                <li>CSE 454: Software Engineering for External Clients</li>
+            </ul>
+        </p>
+        <!-- <p>
+            I've also extremely enjoyed non-Computer Science classes such as:
+            <ul>
+                <li>The Good Life Between Religion and Politics</li>
+                <li>Love and Reason</li>
+                <li>Creative Nonfiction Writing</li>
+                <li>Introduction to Mechanical Engineering</li>
+            </ul>
+        </p> -->
+    </section>
+    <section>
+        <h3>My Work Experience and Involvement</h3>
+        <p>
+            <h4>Teaching Assistant for CSE131: Introduction to Computer Science</h4>
+            <p>
+                I have been a TA for CSE131 since my first semester at WashU, and I have TA'd every semester since. As a base-level TA, I contributed the following to the class:
+                <ul>
+                    <li>Leading "studios", which are 80 minute class sessions once a week for 2 to 4 small groups of 2 to 5 students. Each studio, students had given problems to work through relating to that weeks module. Depending on their understand of the material, I would help them get through the problems and review the material taught.</li>
+                    <li>Working between 2 and 8 hours of office hours a week, where I helped students with issues from detail-level bugs to helping them understand broader concepts.</li>
+                    <li>Proctoring and grading exams, three times per semester.</li>
+                </ul>
+                <p>After 2 semesters, I became a section lead for the class, where I made more administrative contributions:</p>
+                <ul>
+                    <li>Taking attendance and managing around 20 to 30 TAs during classtime</li>
+                    <li>Helping TAs and students with bugs and issues that they may not have been able to navigate</li>
+                    <li>Serving as a contact point between TAs and supervisors</li>
+                </ul>
+                <p>After another 2 semesters, I was selected to be the head TA for the class. As Head TA, I:</p>
+                <ul>
+                    <li>Read over 200 applications and selected 80 to 100 TAs for the upcoming semesters</li>
+                    <li>Trained first-time TAs on both logistics and how to best help students</li>
+                    <li>Worked with the lead instructor to modernize old course materials and improve class flow to optimize students' learning experience and class experience</li>
+                </ul>
+            </p>
+            <h4>Research Assistant in Dr. Caitlin Kelleher's <em>Code Stories</em> lab</h4>
+            <p>
+                As a part of WashU's CSREU: Computer Science Research Experience for Undergraduates, a 10-week summer program where I worked with Dr. Kelleher and PhD student John Allen as a part of their research. <br>
+                <br>
+                The lab has been performing Human-Computer Interaction research, where they have developed a tool called the "Code History". The history shows the development process of an entire project, with the main goal of reducing the pain in navigating a foreign code base. 
+                The idea behind the story is to show web searches, code changes, and other decisions that a programmer made while working on a project. My goals over the summer included:
+                <ul>
+                    <li>Preparing the lab for a user study, where we read other research in order to design the most effective and conclusive study possible.</li>
+                    <li>After creating a study design, we prepared the application to be sent to the review board and trasitioned into creating Code History integration into an IDE (integrated development environment). I started using Visual Studio Code's API to create an extension in the app, where my goal was to seamlessly integrate the actual code base with our developed stories.  </li>
+                </ul> 
+                
+            </p>
+            <h4>KWUR 90.3FM Webmaster</h4>
+            <p>
+                I have served as Webmaster for WashU's underground radio station, KWUR, beginning in Spring semester of 2023. 
+                <ul>
+                    <li>I have managed the station's scheduling system, built with Django, to allow DJs to pick their show times and to deal with show collisions.</li>
+                    <li>I maintain and update <a href="http://kwur.wustl.edu">the station's website</a>, which is built in Ruby. I most recently overhauled the content management system used on the website. The new CMS allows other people in the club to create and edit blog posts, which are then published onto the website.</li>
+                </ul>
+            </p>
+        </p>
+    </section>
+</body>
+<script>
+    // autoupdating side B)
+    function getYear() {
+        const today = new Date();
+        var result = "I am a ";
+        if(today.getFullYear() >= 2025 && today.getMonth() >= 4){
+            return "I graduated from WashU with a BS in Computer Science in May 2025!";
+        }
+        else if(today.getFullYear() >= 2024 && today.getMonth() >= 7) {
+            result += "senior";
+        }
+        else if(today.getFullYear() == 2024 && today.getMonth() >= 4) {
+            result += "rising senior";
+        }
+        else {
+            result += "junior"
+        }
+        result += " earning a Bachelor's in Computer Science at WashU.";
+        return result;
+    }
+    document.getElementById("year").innerHTML = getYear();
+</script>
+</html>

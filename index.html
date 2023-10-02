@@ -1,1 +1,39 @@
-hello world
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Prisco</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="main.js"></script>
+</head>
+<body>
+    <main>
+        <article id="aboutme">
+            <h1 id="name">Hi! I'm Vicky :)</h1>
+            <div id="picture">
+                <img id="me" src="me.jpg">  
+            </div>
+        </article>
+        <section id="bio">
+            <p>Computer Science major • Human-Computer Interaction minor • <span id="yankees" onmouseenter="changePhoto()" onmouseleave="changeBack()">Die-hard Yankees fan</span> • Hobbyist baker • 35mm Film Enthusiast</p>
+        </section>
+    </main>
+    <header>
+        <a href="me.html"><button class="tab">About Me</button></a>
+        <a href="projects.html"><button class="tab">My Projects</button></a>
+        <a href="https://github.com/victoriaprisco" target="_blank"><button class="tab">My Github</button></a>
+    </header>
+</body>
+<script>
+    function changePhoto() {
+        $("#me").attr("src", "yankees.jpg");
+        $("#me").css("width", "50vw");
+        $("#me").css("object-fit", "cover");
+    }
+    function changeBack() {
+        $("#me").attr("src", "me.jpg");
+    }
+</script>
+</html>
