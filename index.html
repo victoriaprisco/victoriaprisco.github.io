@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Victoria Prisco</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="./favicon.ico">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -12,7 +12,7 @@
         <article id="aboutme">
             <h1 id="name">Hi! I'm Vicky :)</h1>
             <div id="picture">
-                <img id="me" src="./me.jpg">  
+                <img id="me" src="./media/me.jpg">  
             </div>
         </article>
         <section id="bio">
@@ -27,12 +27,12 @@
 </body>
 <script>
     function changePhoto() {
-        $("#me").attr("src", "./yankees.jpg");
+        $("#me").attr("src", "./media/yankees.jpg");
         $("#me").css("width", "50vw");
         $("#me").css("object-fit", "cover");
     }
     function changeBack() {
-        $("#me").attr("src", "./me.jpg");
+        $("#me").attr("src", "./media/me.jpg");
     }
 </script>
 </html>
