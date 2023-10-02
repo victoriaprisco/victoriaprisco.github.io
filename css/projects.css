@@ -10,7 +10,7 @@
 }
 
 article {
-    margin: 30px 120px;
+    margin: 30px 5vw 0px 5vw;
     padding:  5px 20px;
     border-radius: 15px;
     color: #434343;
@@ -20,6 +20,7 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: fit-content;
 }
 #proj {
     justify-content: center;
@@ -82,3 +83,26 @@ article > h2 {
     left: 5vw;
     width: 80vw;
 }
+
+
+
+@media screen and (max-width: 480px) { 
+    * {
+        overflow-x:hidden;
+    }
+    body {
+        margin: 0px;
+    }
+    article {
+        width: fit;
+        margin: 40px 0;
+        border-radius: 0px;
+    }
+    .titles {
+        font-size: 8vw;
+    }
+    #proj {
+        font-size: 10vw;
+    }
+}
+

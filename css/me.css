@@ -71,3 +71,40 @@ header {
     flex-direction: row;
     align-content: center;
 }
+
+@media screen and (max-width: 480px) {
+    section > * {
+        padding: 10px;
+    }
+    * {
+        overflow-x: hidden;
+    }
+    body {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        
+    }
+    section {
+        width: 95%;
+        padding: 3vw;
+        border-radius: 0;
+    }
+    h1 {
+        font-size: 20vw;
+        margin: 0px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        position: relative;
+        top: 5%;
+    }
+    #back-arrow {
+        position: relative;
+        top: 10%;
+        padding-left: 10px;
+    }
+}
+
+#first {
+    padding-bottom: 50px;
+}
