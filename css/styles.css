@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Pixelify+Sans&display=swap');
-body {
+html {
     width:auto;
     /* background-color: #f0f0f094; */
     border-style: solid;
+    margin: 10px;
+    height: fit-content;
     border-color: #A6808C;
 }
 header {
@@ -22,6 +24,7 @@ a{
     padding: 20px 50px;
     margin-right: 5vw;
     margin-left: 5vw;
+    margin-bottom:1vw;
     font-size: 90%;
     background-color: #a6808c85;
     transition: transform 200ms;
