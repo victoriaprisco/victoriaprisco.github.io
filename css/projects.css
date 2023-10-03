@@ -20,7 +20,6 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: fit-content;
 }
 #proj {
     justify-content: center;
