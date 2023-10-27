@@ -16,7 +16,7 @@
             </div>
         </article>
         <section id="bio">
-            <p>Computer Science major • Human-Computer Interaction minor • <span id="yankees" onmouseenter="changePhoto()" onmouseleave="changeBack()">Die-hard Yankees fan</span> • Hobbyist baker • 35mm Film enthusiast</p>
+            <p>Computer Science major • Human-Computer Interaction minor • <span id="yankees" onmouseenter="changePhoto('./media/yankees.jpg')" onmouseleave="changeBack()">Die-hard Yankees fan</span> • Hobbyist baker • <span id="film" onmouseenter="changePhoto('./media/me_film.jpg')" onmouseleave="changeBack()">35mm Film enthusiast</span></p>
         </section>
     </main>
     <header>
@@ -26,8 +26,8 @@
     </header>
 </body>
 <script>
-    function changePhoto() {
-        $("#me").attr("src", "./media/yankees.jpg");
+    function changePhoto(photo_path) {
+        $("#me").attr("src", photo_path);
         $("#me").css("width", "50vw");
         $("#me").css("object-fit", "cover");
     }
