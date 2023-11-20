@@ -2,21 +2,22 @@
 
 * {
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 300;
 }
 
 .titles {
     font-weight: 500;
+    color: #a6808c;
 }
 
 article {
-    margin: 30px 5vw 0px 5vw;
+    margin: 30px 7vw 0px 7vw;
     padding:  5px 20px;
     border-radius: 15px;
-    color:black;
-    background-color: #a6808c85;
-    border-style:solid;
-    border-color:#434343ab;
+    color: #332936;
+    /* font-weight: bold; */
+    background-color: #f3e2ed;
+    /* border-style:solid; */
+    /* border-color:#805e6985; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,18 +55,27 @@ header {
 #back-arrow:hover{
     transform: translateY(-10px);
 }
+a {
+    color: #a6808c;
+    font-weight: 1000;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 article > h2 {
     font-size: 2vw;
-    color: black;
+    color: #4d3a40;
+
 }
 #demo {
     position: relative;
     width: 70vw;
-    left: 6%;
+    left: 10%;
     /* margin: auto; */
     border-style: solid;
     border-color: #a6808c;
-    border-width: 2px;
+    border-width: 5px;
 }
 #more-info {
     display: flex;
@@ -80,7 +90,7 @@ article > h2 {
     padding-left:15px;
     /* margin-left: 500 */
     left: 5vw;
-    width: 80vw;
+    width: 90vw;
 }
 
 
