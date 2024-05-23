@@ -17,6 +17,7 @@
         <!-- <p> -->
             I was born and raised in Northern New Jersey, where I lived until I went to college! I am very passionate about things that only a New Jerseyan could care about: it's pork roll, not Taylor Ham; central Jersey is not real.
             I grew up loving musical theater and baseball, going into New York City every so often to see both Broadway shows and Yankees games. In the 5th grade, I took a summer class where I learned HTML, and I've been writing code since.
+            <span id="year"></span>
         <!-- </p> -->
     </section>
     <section>
@@ -95,8 +96,9 @@
             <p>
                 I have served as Webmaster for WashU's underground radio station, KWUR, beginning in Spring semester of 2023. 
                 <ul>
-                    <li>I have managed the station's scheduling system, built with Django, to allow DJs to pick their show times and to deal with show collisions.</li>
-                    <li>I maintain and update <a href="http://kwur.wustl.edu">the station's website</a>, which is built in Ruby. I most recently overhauled the content management system used on the website. The new CMS allows other people in the club to create and edit blog posts, which are then published onto the website.</li>
+                    <li>I have rebuilt and recreated the station's website and internal system into a self-contained website that more effectively fits their needs and style. The website lives at <a href="http://kwur.wustl.edu">kwur.wustl.edu</a>.</li>
+                    <li>I formerly managed the station's scheduling system, built with Django, to allow DJs to pick their show times and to deal with show collisions.</li>
+                    <li>With the old veroisn of the website: I maintained and updated <a href="http://kwur.wustl.edu">the station's website</a>, which was formerly built in Ruby. I most recently overhauled the content management system used on the website. The new CMS allows other people in the club to create and edit blog posts, which are then published onto the website.</li>
                 </ul>
             </p>
         </p>
@@ -106,7 +108,7 @@
     // autoupdating side B)
     function getYear() {
         const today = new Date();
-        var result = "I am a ";
+        var result = "I am currently a ";
         if(today.getFullYear() >= 2025 && today.getMonth() >= 4){
             return "I graduated from WashU with a BS in Computer Science in May 2025!";
         }
