@@ -22,15 +22,14 @@ article {
     flex-direction: column;
     align-items: center;
 }
+
 #proj {
-    justify-content: center;
-    font-weight: 500;
     color: #a6808c;
+    font-weight: 500;
     font-size: 5vw;
-    margin: 2px;
-    width: fit-content;
-    padding-left: 40px;
-    padding-top:20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 40px;
 }
 body {
     display: flex;
@@ -40,7 +39,16 @@ body {
 #back-arrow {
     width: 40px;
     transition: transform 200ms;
+    position: relative;
+    top: 35%;
+    padding-left: 20px;
+    padding-top: 20px;
 }
+
+#back-arrow:hover{
+    transform: translateY(-10px);
+}
+
 a > #back-arrow {
     position: relative;
     top: 10px;
@@ -52,9 +60,7 @@ header {
     flex-direction: row;
     align-content: center;
 }
-#back-arrow:hover{
-    transform: translateY(-10px);
-}
+
 a {
     color: #a6808c;
     font-weight: 1000;

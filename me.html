@@ -109,10 +109,12 @@
     function getYear() {
         const today = new Date();
         var result = "I am currently a ";
+        const month = today.getMonth()
+        const year = today.getFullYear()
         if(today.getFullYear() >= 2025 && today.getMonth() >= 4){
             return "I graduated from WashU with a BS in Computer Science in May 2025!";
         }
-        else if(today.getFullYear() >= 2024 && today.getMonth() >= 7) {
+        else if(today.getFullYear() >= 2024) {
             result += "senior";
         }
         else if(today.getFullYear() == 2024 && today.getMonth() >= 4) {
@@ -127,3 +129,4 @@
     document.getElementById("year").innerHTML = getYear();
 </script>
 </html>
+    
